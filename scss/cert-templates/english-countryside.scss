@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;600&display=swap');
+
+// Colours
+$color-1: #FAFAF1;
+$color-2: #3CB67B;
+$color-3: #E3A810;
+
+#certificate {
+  &.english-countryside  {
+    font-family: "Abril Fatface", serif;
+    background: $color-1;
+    border-top: 20px $color-3 solid;
+    border-bottom: 20px $color-2 solid;
+    color: $color-2;
+    .title {
+      margin: 0.5em 0;
+    }
+    .recipient-name {
+      padding: 15px 0;
+      border-top: 4px $color-3 double;
+      border-bottom: 4px $color-3 double;
+    }
+    .introduction,
+    .description,
+    .author {
+      font-family: "Epilogue", sans-serif;
+      font-weight: 400;
+    }
+    .stamp-edges,
+    .stamp-edges:before,
+    .stamp-edges:after,
+    .stamp,
+    .stamp:before,
+    .stamp:after {
+      background-color: $color-3;
+    }
+  }
+}

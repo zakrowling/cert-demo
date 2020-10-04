@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fondamento:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+
+#certificate {
+  &.doctor-of-philosophy {
+    font-family: "Fondamento", cursive;
+    .container {
+      border-width: 2px;
+      border-style: solid;
+      border-color: rgba(0,0,0,.3);
+    }
+    .introduction,
+    .description {
+      font-family: "Lora", serif;
+      font-weight: 400;
+    }
+  }
+}

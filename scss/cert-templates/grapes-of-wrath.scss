@@ -1,0 +1,26 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+// Colours
+$color-1: #FAF4F9;
+$color-2: #845F82;
+$color-3: #E3A810;
+
+#certificate {
+  &.grapes-of-wrath  {
+    font-family: "Poppins", serif;
+    background: $color-1;
+    color: $color-2;
+    .container {
+      border-width: 2px;
+      border-style: dotted;
+      border-color: rgba($color-2,.5);
+    }
+    .introduction,
+    .description,
+    .author {
+      font-family: "Epilogue", sans-serif;
+      font-weight: 400;
+    }
+  }
+}
