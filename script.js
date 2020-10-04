@@ -10,6 +10,21 @@ document.getElementById('certTemplate').onchange = function(){
   certificate.classList.add(this.value.toLowerCase());
 }
 
+document.getElementById('authors').onchange = function(){
+  if (this.value == "0") {
+    document.querySelector(".first-author").style.display = "none";
+    document.querySelector(".second-author").style.display = "none";
+  }
+  if (this.value == "1") {
+    document.querySelector(".first-author").style.display = "inline-block";
+    document.querySelector(".second-author").style.display = "none";
+  }
+  if (this.value == "2") {
+    document.querySelector(".first-author").style.display = "inline-block";
+    document.querySelector(".second-author").style.display = "inline-block";
+  }
+}
+
 document.getElementById('fontSize').onchange = function(){
   if (this.value == "Large") {
     certificate.style.fontSize = "16px";
@@ -26,9 +41,3 @@ document.getElementById('showStamp').onchange = function(){
   certificate.classList.remove('hide-stamp');
   certificate.classList.add(this.value.toLowerCase());
 }
-
-$(document).ready(function() {
-
-  // Stuff here
-
-});
