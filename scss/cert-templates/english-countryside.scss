@@ -9,9 +9,10 @@ $color-3: #E3A810;
 #certificate {
   &.english-countryside  {
     font-family: "Libre Baskerville", serif;
-    background: $color-1;
-    border-top: 20px $color-3 solid;
-    border-bottom: 20px $color-2 solid;
+    background: linear-gradient(0deg, $color-2 0%, $color-3 70%);
+    .container {
+      background-color: $color-1;
+    }
     .title {
       margin: 0.5em 0;
       color: $color-2;

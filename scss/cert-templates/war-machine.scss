@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;600&display=swap');
+
+// Colours
+$color-1: #EBE8DA;
+$color-2: #7E9276;
+$color-3: #926015;
+
+#certificate {
+  &.war-machine  {
+    font-family: "Allerta Stencil", serif;
+    background: linear-gradient(30deg, $color-2 0%, $color-2 33.33%, $color-3 33.34%, $color-3 66.66%, $color-2 66.67%, $color-2 100%);
+    color: $color-2;
+    .container {
+      background-color: $color-1;
+      .recipient-name {
+        font-size: 2.2em;
+        text-transform: uppercase;
+        color: $color-3;
+      }
+    }
+    .introduction,
+    .description,
+    .author {
+      font-family: "Epilogue", sans-serif;
+      font-weight: 400;
+      color: rgba(black,.7);
+    }
+    .stamp-edges,
+    .stamp-edges:before,
+    .stamp-edges:after,
+    .stamp,
+    .stamp:before,
+    .stamp:after {
+      background-color: $color-2;
+    }
+  }
+}
