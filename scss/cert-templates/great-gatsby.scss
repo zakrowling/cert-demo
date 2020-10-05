@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fondamento:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+// Colours
+$color-1: #FFFFFF;
+$color-2: #E3A810;
+
+#certificate {
+  &.great-gatsby {
+    font-family: "Abril Fatface", cursive;
+    background: $color-1;
+    &:before,
+    &:after {
+      position: absolute;
+      top: -80px;
+      left: -80px;
+      content: '';
+      width: 100px;
+      height: 200px;
+      transform: rotate(45deg);
+      background: #fff;
+      border-width: 4px;
+      border-style: double;
+      border-color: rgba(0,0,0,.3);
+    }
+    &:after {
+      bottom: -80px;
+      right: -80px;
+      top: auto;
+      left: auto;
+    }
+    .container {
+      border-width: 4px;
+      border-style: double;
+      border-color: rgba(0,0,0,.3);
+    }
+    .introduction,
+    .description,
+    .author {
+      font-family: "Poppins", serif;
+      font-weight: 400;
+    }
+    .recipient-name,
+    .title {
+      margin: .4em;
+      font-weight: 400;
+      color: $color-2;
+    }
+    .recipient-name {
+      padding: 15px 0;
+      margin: 0.6em 0;
+      line-height: 1em;
+      border-top: 4px $color-2 double;
+      border-bottom: 4px $color-2 double;
+    }
+    .description {
+      padding-top: 0;
+    }
+    .stamp-edges,
+    .stamp-edges:before,
+    .stamp-edges:after,
+    .stamp,
+    .stamp:before,
+    .stamp:after {
+      background-color: $color-2;
+    }
+  }
+}

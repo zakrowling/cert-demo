@@ -14,6 +14,8 @@
 @import 'cert-templates/grapes-of-wrath';
 @import 'cert-templates/fritz-lang';
 @import 'cert-templates/playwright';
+@import 'cert-templates/great-gatsby';
+@import 'cert-templates/marcus-aurelius';
 
 $white: #fff;
 $black: #000;
@@ -101,6 +103,10 @@ body {
     align-items: center;
     margin-top: 3%;
     height: 50%;
+  }
+
+  .title {
+    text-transform: uppercase;
   }
   
   .recipient-name {
