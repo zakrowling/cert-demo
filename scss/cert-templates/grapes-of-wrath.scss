@@ -12,9 +12,9 @@ $color-3: #E3A810;
     background: $color-1;
     color: $color-2;
     .container {
-      border-width: 2px;
-      border-style: dotted;
-      border-color: rgba($color-2,.5);
+      border-width: 1px;
+      border-style: dashed;
+      border-color: rgba($color-2,.8);
     }
     .introduction,
     .description,

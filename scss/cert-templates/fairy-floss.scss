@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;600&display=swap');
+
+// Colours
+$color-1: #FB6F8B;
+$color-2: #80CEDA;
+$color-3: #EE9CDC;
+
+#certificate {
+  &.fairy-floss  {
+    font-family: "Mitr", sans-serif;
+    background: linear-gradient(90deg, $color-1 0%, $color-1 33.32%, $color-2 33.33%, $color-2 66.65%, $color-3 66.66%, $color-3 100%);
+    .container {
+      background-color: white;
+    }
+    .title {
+      color: $color-2;
+    }
+    .recipient-name {
+      color: $color-1;
+    }
+    .introduction,
+    .description,
+    .author {
+      font-family: "Epilogue", sans-serif;
+      font-weight: 400;
+    }
+  }
+}
