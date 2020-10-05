@@ -41,3 +41,8 @@ document.getElementById('showStamp').onchange = function(){
   certificate.classList.remove('hide-stamp');
   certificate.classList.add(this.value.toLowerCase());
 }
+
+document.getElementById('showLogo').onchange = function(){
+  certificate.classList.remove('hide-logo');
+  certificate.classList.add(this.value.toLowerCase());
+}
