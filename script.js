@@ -10,7 +10,8 @@ document.getElementById('certTemplate').onchange = function(){
   certificate.classList.add(this.value.toLowerCase());
   document.getElementById('certType').selectedIndex = 0;
   document.getElementById('authors').selectedIndex = 3;
-  document.getElementById('fontSize').selectedIndex = 1;
+  document.getElementById('fontSize').selectedIndex = 0;
+  certificate.style.fontSize = "13px";
   document.getElementById('showStamp').selectedIndex = 0;
   document.getElementById('showLogo').selectedIndex = 0;
 }
@@ -31,6 +32,7 @@ document.getElementById('authors').onchange = function(){
 }
 
 document.getElementById('fontSize').onchange = function(){
+  certificate.style.fontSize = "13px";
   if (this.value == "Large") {
     certificate.style.fontSize = "16px";
   }
