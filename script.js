@@ -9,7 +9,11 @@ document.getElementById('certTemplate').onchange = function(){
   certificate.className = '';
   certificate.classList.add(this.value.toLowerCase());
   document.getElementById('certType').selectedIndex = 0;
-  document.getElementById('authors').selectedIndex = 3;
+
+  document.getElementById('authors').selectedIndex = 0;
+  document.querySelector(".first-author").style.display = "inline-block";
+  document.querySelector(".second-author").style.display = "inline-block";
+
   document.getElementById('fontSize').selectedIndex = 0;
   certificate.style.fontSize = "13px";
   document.getElementById('showStamp').selectedIndex = 0;
