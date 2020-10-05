@@ -9,6 +9,8 @@ document.getElementById('certTemplate').onchange = function(){
   certificate.className = '';
   certificate.classList.add(this.value.toLowerCase());
   document.getElementById('certType').selectedIndex = 0;
+  document.getElementById('authors').selectedIndex = 0;
+  document.getElementById('fontSize').selectedIndex = 0;
   document.getElementById('showStamp').selectedIndex = 0;
   document.getElementById('showLogo').selectedIndex = 0;
 }
