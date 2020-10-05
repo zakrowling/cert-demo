@@ -189,7 +189,7 @@ body {
       border-radius: 100%;
       box-sizing: border-box;
       box-shadow: 0 0 2px 5px rgba($black, .1);
-      background: linear-gradient(43deg, rgba($black, .15) 0%, rgba($white, .15) 70%);
+      background: linear-gradient(43deg, rgba($white,.05) 20%, rgba($black, .1) 50%, rgba($white,0.05) 70%);
       border: 4px rgba($white, .4) double;
     }
     
